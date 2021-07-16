@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pract2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap.css" type="text/css" rel="stylesheet">
+        <link href="pract2.css" type="text/css" rel="stylesheet">
+    </head>
+    <body class="container" >
+        <h1 style="margin-top:90px;text-align:center;font-size:50px;text-shadow:5px 5px rgb(73, 71, 72);">Registration form</h1>
+        <div class="row">
+            <div class="col-2 col-xs-12 col-sm-12">
+                <div class="form rounded" onsubmit="suBmit();">
+                    <div class="form-group">
+                        <b>Full name</b><sup style="color: red;">*</sup>: <br/><input type="text" class="form-control" id="name" placeholder="Enter your name" >
+                    <label id="name-text" style="visibility:hidden;color: yellow;">please enter your name</label><br/>
+                    </div>
+                    <div class="form-group"><b>Email id</b><sup style="color: red;">*</sup>: <br/><input type="text" class="form-control" id="email" style="text-align: right;" type="email" value="@gmail.com" >
+                        <label id="email-text" style="visibility: hidden;color:yellow;">Kindly check your email id</label><br/>
+                        </div>
+                    <div class="form-group">
+                        <b>Phone number</b> <sup style="color: red;">*</sup>: <br/><input class="form-control" id="tel" type="tel" >
+                    <label id="number-text" style="visibility: hidden;color:yellow;">please enter your phn number correctly</label><br/>
+                    </div>
+                    <div class="form-group">
+                        <b>password</b> <sup style="color: red;">*</sup>: <br/><input class="form-control" class="password" placeholder="enter password" type="password" id="password1" ><br/>
+                    <input class="form-control" placeholder="Reenter password" type="password" id="password2" >
+                    <label id="pswd-text1" style="visibility: hidden;color:yellow;">Password length is very short</label>
+                    <label id="pswd-text2" style="visibility: hidden;color:yellow;">Passwords did not matched</label>
+                    <label id="pswd-text3" style="visibility: hidden;color:yellow;">Password is not entered</label><br/>
+                    </div>
+                    <!--<div class="checkbox"><b>Location</b>: <input type="checkbox">India<br/></div>-->
+                    <div>
+                        Resident of India<input type="radio" name="cbx1"></input><p></p>
+                        Resident of other Country<input type="radio" name="cbx1"></input>
+                    </div>
+                    <p></p>
+                    <b></b>How much are you intrested in this company <input type="range"><br/>
+                    <input class="btn-block justify-content-center" type="file"><br/><br/>
+                    <input type="radio">Accepting all the conditions<br/><br/>
+                    <button class="submit btn-primary btn-block" onclick="suBmit()">Submit</button><br/>
+            </div>
+            </div>
+        </div>
+        <script src="register.js"></script>
+        <script src="jquery.js"></script>
+        <script src="bootstrap.js"></script>
+        
+    </body>
+</html>

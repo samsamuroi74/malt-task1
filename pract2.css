@@ -1,0 +1,20 @@
+body{
+    color: white;
+    background-image: url("background.jpg");
+    background-blend-mode:inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form{
+    width:40%;
+    margin-top: 2%;
+    margin-left:31%;
+    font-size: large;
+}
+.submit{
+    text-align: center;
+    width:60%; 
+    border-radius: 15px;
+    margin-left: 25%;
+}
